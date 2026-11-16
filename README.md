@@ -67,7 +67,7 @@ O repositório filtra, ordena e decide os destaques. A `HomeScreen` é um `State
 
 ## Como rodar
 
-Com o Flutter instalado, rodar `flutter pub get` e depois `flutter run`, num emulador Android ou no Chrome, com internet para as fotos. Os testes rodam com `flutter test`.
+Rodar `flutter pub get` e depois `flutter run`, num emulador Android ou no Chrome. Os testes rodam com `flutter test`.
 
 ## Vídeo pitch
 

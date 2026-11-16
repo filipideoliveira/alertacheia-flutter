@@ -59,12 +59,15 @@ class RotaSeguraSection extends StatelessWidget {
         const SizedBox(height: 12),
         SizedBox(
           height: 212,
-          child: ListView.separated(
+          child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: abrigos.length,
-            separatorBuilder: (context, index) => const SizedBox(width: 12),
-            itemBuilder: (context, index) =>
-                _DestaqueCard(abrigo: abrigos[index]),
+            itemBuilder: (context, index) => Padding(
+              padding: EdgeInsets.only(
+                right: index == abrigos.length - 1 ? 0 : 12,
+              ),
+              child: _DestaqueCard(abrigo: abrigos[index]),
+            ),
           ),
         ),
       ],

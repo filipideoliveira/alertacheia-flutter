@@ -53,14 +53,16 @@ lib/
 ├── widgets/
 │   ├── abrigo_list_item.dart     card da lista vertical
 │   ├── categoria_selector.dart   chips do filtro
-│   ├── rota_segura_section.dart  alerta e destaques horizontais
+│   ├── rota_segura_section.dart  alerta e faixa horizontal de destaques
+│   ├── destaque_card.dart        card de cada destaque
 │   └── foto_abrigo.dart          foto usada na lista e nos destaques
 ├── screens/
 │   └── home_screen.dart          junta tudo e guarda a categoria escolhida
 └── theme/
     └── app_theme.dart            cores e tema
 test/
-└── abrigo_repository_test.dart   testes do filtro, da ordenação e da Rota segura
+├── abrigo_repository_test.dart   testes do filtro, da ordenação e da Rota segura
+└── layout_test.dart              tela sem overflow com a fonte aumentada
 ```
 
 O repositório filtra, ordena e decide os destaques. A `HomeScreen` é um `StatefulWidget` que guarda a categoria e chama `setState` no toque do chip. Os widgets só desenham o que recebem.

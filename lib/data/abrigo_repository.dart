@@ -18,7 +18,7 @@ class AbrigoRepository {
       });
   }
 
-  // Regiões com alerta de enchente agora, as mesmas da consulta do banco.
+  // Regiões com alerta de enchente agora.
   static const _regioesEmAlerta = ['Centro', 'Zona Leste'];
 
   // Bairros com rua alagada no caminho até o abrigo.
@@ -48,6 +48,7 @@ class AbrigoRepository {
   static String _foto(String id) =>
       'https://images.unsplash.com/photo-$id?w=600&q=80&fit=crop';
 
+  // O destaque não vem marcado aqui: o construtor calcula pela regra da Rota segura.
   static final _dados = [
     Abrigo(
       nome: 'Escola Municipal da Sé',
